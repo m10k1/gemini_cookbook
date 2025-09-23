@@ -29,6 +29,7 @@ def main():
         )
     )
 
+# https://googleapis.github.io/python-genai/genai.html#genai.types.Image
     for i, image in enumerate(response.images):
         image.save(location=f"generated_image_{i}.png")
 
